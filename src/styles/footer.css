@@ -1,0 +1,170 @@
+.footer-main{
+    width:100%;
+    background-color: #da9d9d;
+    padding: 20px 0;
+}
+.footer-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-box-1,.footer-box-2,.footer-box-3,.footer-box-4{
+    height: auto;
+    flex: 1 1 200px;
+    padding: 15px 0;
+    margin: 10px;
+}
+.footer-box-1 .footer-logo{
+    width: 100px;
+}
+.footer-box-1 .footer-logo img{
+    width: 70%;
+}
+.footer-main p{
+    font-weight: 500;
+    font-size: 15px;
+}
+.footer-main h6{
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer-input-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border: 2px solid gray;
+    padding: 3px;
+    border-radius: 4px;
+}
+.footer-input-div input{
+  border: none;
+  outline: none;
+  height: 33px;
+  width: 80%;
+  background-color: whitesmoke;
+  padding-left: 10px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.footer-input-div input[type="email"]{
+    font-weight: 500;
+}
+.footer-input-div button{
+    width: 20%;
+    height:33px;
+    border:none;
+    outline: none;
+    background-color: #df2020;
+    color:#fff;
+    font-weight: 500;
+    text-transform: capitalize ;
+    border-top-right-radius:4px ;
+    border-bottom-right-radius:4px ;
+}
+.copy-right-div{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copy-right-div p{
+    margin-bottom: 0;
+}
+.footer-link-div{
+    height:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-link{
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.footer-link-div span{
+    font-size: 22px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* -------------screen size of 600px-------------- */
+@media screen and (max-width:600px){
+    .copy-right-div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+/* -------------screen size of 601px to 768px--------------- */
+@media screen and (min-width: 601px) and (max-width:768px){
+    .footer-main p{
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .footer-main h6{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .footer-input-div input{
+        height: 48px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .footer-input-div button{
+        height: 48px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .copy-right-div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .copy-right-div p{
+        font-size: 25px;
+    }
+    .copy-right-div span{
+        font-size: 30px;
+        margin: 0 18px;
+    }
+}
+
+/* ------------screen size of 820px to 912px-------------- */
+@media screen and (min-width:820px) and (max-width:912px){
+    .footer-main p{
+        font-weight: 500;
+        font-size: 23px;
+    }
+    .footer-main h6{
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .footer-input-div input{
+        height: 51px;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .footer-input-div button{
+        height: 51px;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .copy-right-div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .copy-right-div p{
+        font-size: 28px;
+    }
+    .copy-right-div span{
+        font-size: 35px;
+        margin: 0 18px;
+    }
+    
+}

@@ -1,0 +1,43 @@
+.foodbox-main{
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background-color: #fcfcfc;
+}
+.foodbox-container{
+    width:90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    height:130px;
+    background-color: #da9d9d;
+    flex: 1 1 280px;
+    margin: 10px;
+    border-radius: 6px;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box img{
+    width: 20%;
+    margin-right: 15px;
+}
+.box span{
+    font-weight: 500;
+}
+.box:hover{
+    transform: translateY(-10px);
+}
+
+/* -------------------screen size of 912px----------------- */
+@media screen and (max-width: 912px){
+    .box span{
+        font-size: 23px;
+    }
+}

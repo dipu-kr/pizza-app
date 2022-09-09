@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+.products-main{
+    width:100%;
+    height: auto;
+    margin-top: 80px;
+}
+.products-bg-img-div{
+    width:100%;
+    height: auto;
+    position: relative;
+}
+.products-bg-img-div img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+.products-bg-img-div h1{
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Sacramento', cursive !important;
+    font-size: 60px;
+}
+.products-container{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.search-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-div input{
+    height: 38px;
+    width: 25%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-weight: 500;
+    box-shadow: 0 0 4px rgba(0,0,0,0.6);
+    background-color: whitesmoke;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+}
+.search-div button{
+    height: 38px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4px #000;
+    background-color: #df2020;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.products-div{
+    margin-top: 35px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 auto;
+}
+.product-div{
+    width: 22%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.product-img-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5px;
+}
+.product-img-div img{
+    width:120px;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+.product-img-div img:hover{
+    transform: scale(1.2);
+}
+.product-name{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.price-btn-div{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+
+}
+.item-price{
+    font-weight: 500;
+}
+.add-btn{
+    border: none;
+    outline: none;
+    padding: 4px 13px;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: #df2020;
+    color: #fff;
+    box-shadow: 0 0 3px #000;
+    font-size: 15px;
+
+}
+
+/* -------------screen size of 600px-------------- */
+@media  screen and (max-width:600px) {
+    .products-bg-img-div h1{
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+        background-color: rgba(0,0,0,0.4)
+    }
+    .search-div input{
+        width: 80%;
+    }
+    .product-div{
+        width:90%;
+    }
+}
+
+/* ------------screen size of 601ps to 768px----------- */
+@media screen and (min-width: 601px) and (max-width:768px){
+    .products-container{
+        width:95%;
+    }
+    .products-bg-img-div h1{
+        font-size: 40px;
+        font-weight: 800;
+        background-color: rgba(0,0,0,0.4);
+    }
+    .search-div input{
+        width: 70%;
+        height: 55px;
+        font-size: 25px;
+    }
+    .search-div button{
+        height: 55px;
+        padding: 0 25px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .product-div{
+        width:45%;
+    }
+    .product-name{
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .item-price{
+        font-size: 22px;
+    }
+    .add-btn{
+        padding: 5px 15px;
+        font-weight: 600;
+        font-size: 21px;
+    
+    }
+    
+}
+
+/* ------------screen size of 820ps to 912px----------- */
+@media screen and (min-width: 820px) and (max-width:912px){
+    .products-container{
+        width:95%;
+    }
+    .products-bg-img-div h1{
+        font-size: 44px;
+        font-weight: 800;
+        background-color: rgba(0,0,0,0.4);
+    }
+    .search-div input{
+        width: 70%;
+        height: 55px;
+        font-size: 25px;
+    }
+    .search-div button{
+        height: 55px;
+        padding: 0 25px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .product-div{
+        width:45%;
+    }
+    .product-name{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .item-price{
+        font-size: 24px;
+    }
+    .add-btn{
+        padding: 6px 16px;
+        font-weight: 600;
+        font-size: 24px;
+    
+    }
+    
+}

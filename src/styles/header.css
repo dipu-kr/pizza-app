@@ -1,0 +1,324 @@
+.header-main{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.header-left-div{
+    width:50%;
+    padding-left: 90px;
+}
+.header-left-div h6{
+    font-weight: 600;
+    color: #212245;
+}
+.header-left-div h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.header-left-div h2 span{
+    color: #df2020;
+    font-style: oblique;
+}
+.header-left-div .header-para{
+    font-size: 16px;
+    font-weight: 400;
+    color: #212245;
+}
+.header-btn-div{
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+.header-btn-div .btn-1{
+    margin-right: 90px;
+    background-color: #df2020;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 5px 24px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 1px solid #cf6161;
+}
+.header-btn-div .btn-1:hover{
+    background-color: transparent;
+    color: #df2020;
+}
+.nxt-arrow{
+    font-size: 20px;
+}
+.header-btn-div .btn-2{
+    color: #df2020;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 5px 24px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 1px solid #cf6161;
+}
+.header-btn-div .btn-2:hover{
+    background-color: #df2020;
+    color: #fff;
+}
+.header-shipping-div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.header-shipping-div p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.bike-icon-p{
+    margin-right: 30px;
+}
+.header-shipping-div p span .bike-icon,.mob-icon{
+    padding: 5px;
+    background-color: #df2020;
+    border-radius: 50%;
+    color:#fff;
+    font-size: 30px;
+}
+
+/* ------------right div-------- */
+.header-right-div{
+    width:50%;
+}
+.header-right-div img{
+    width: calc(100% - 30%);
+    object-fit: cover;
+    position: relative;
+    margin-left: 60px;
+    z-index: -1;
+}
+
+/* --------------media query for 600px------- */
+@media screen and (max-width:600px){
+    .header-main{
+        height: auto;
+    }
+.header-left-div{
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+.header-left-div h6{
+    margin-top: 60px;
+}
+.header-left-div p{
+    text-align: center;
+}
+.header-btn-div .btn-1{
+    margin-right: 15px;
+}
+.header-shipping-div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-shipping-div p{
+    width: 50%;
+    font-size: 12px;
+    font-weight: 600;
+}
+.bike-icon-p{
+    margin-right: 0;
+}
+.header-right-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-right-div img{
+    width: calc(100% - 10%);
+    margin-top: 50px;
+    margin-left: 0;
+    object-fit: cover;
+}
+}
+
+/* -----------------------width for 601px to 768px-------------- */
+@media screen and (min-width:601px) and (max-width:768px){
+    .header-main{
+        height: auto;
+    }
+    .header-left-div{
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .header-left-div h6{
+        margin-top: 100px;
+        font-size: 30px;
+    }
+    .header-left-div h2{
+        font-size: 47px;
+    }
+    .header-left-div p{
+        text-align: center;
+    }
+    .header-para{
+        font-size: 25px !important;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+    .header-btn-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .header-btn-div .btn-1{
+        padding: 15px 48px;
+        margin-right: 0px;
+        font-size: 28px;
+    }
+    .header-btn-div .btn-2{
+        padding: 15px 48px;
+        font-size: 28px;
+    }
+    .header-shipping-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .nxt-arrow{
+        font-size: 30px;
+    }
+    .header-shipping-div p{
+        width: 50%;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .bike-icon-p{
+        margin-right: 0;
+    }
+    .header-left-div p{
+    margin-bottom: 0;
+    }
+    .header-left-div p .mob-icon{
+        font-size: 45px;
+    }
+    .header-left-div p .bike-icon{
+        font-size: 45px !important;
+    }
+    .header-right-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-right-div img{
+        width: calc(100% - 10%);
+        margin-top: 50px;
+        margin-left: 0;
+        object-fit: cover;
+    }
+}
+
+/* ------------------screen size 820px to  912px----------------*/
+@media screen and (min-width:820px) and (max-width:912px){
+    .header-main{
+        height: auto;
+    }
+    .header-left-div{
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .header-left-div h6{
+        margin-top: 100px;
+        font-size: 34px;
+    }
+    .header-left-div h2{
+        font-size: 55px;
+    }
+    .header-left-div p{
+        text-align: center;
+    }
+    .header-para{
+        font-size: 30px !important;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+    .header-btn-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .header-btn-div .btn-1{
+        padding: 15px 50px;
+        margin-right: 0px;
+        font-size: 33px;
+    }
+    .header-btn-div .btn-2{
+        padding: 15px 50px;
+        font-size: 33px;
+    }
+    .header-shipping-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .nxt-arrow{
+        font-size: 33px;
+    }
+    .header-shipping-div p{
+        width: 50%;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .bike-icon-p{
+        margin-right: 0;
+    }
+    .header-left-div p{
+    margin-bottom: 0;
+    }
+    .header-left-div p .mob-icon{
+        font-size: 45px;
+    }
+    .header-left-div p .bike-icon{
+        font-size: 45px !important;
+    }
+    .header-right-div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-right-div img{
+        width: calc(100% - 10%);
+        margin-top: 50px;
+        margin-left: 0;
+        object-fit: cover;
+    }
+}
