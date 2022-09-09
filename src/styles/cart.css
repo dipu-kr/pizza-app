@@ -179,11 +179,18 @@
     }
     .cart-subtotal-div{
         width:95%;
+        margin-top: 15px;
     }
     .cart-item-img,.cart-item-price,.cart-item-qty,.cart-item-totalPrice{
         flex: 1 1 100%;
         display: flex;
         padding: 6px 0;
+    }
+    .clear-btn-div{
+        margin-bottom: 25px;
+    }
+    .cart-btn-div{
+        margin: 25px 0;
     }
     .cart-btn-div button{
         width: 200px;

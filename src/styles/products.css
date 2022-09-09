@@ -130,6 +130,9 @@
 
 /* -------------screen size of 600px-------------- */
 @media  screen and (max-width:600px) {
+    .products-container{
+        padding-bottom: 50px;
+    }
     .products-bg-img-div h1{
         font-size: 30px;
         font-weight: 800;
