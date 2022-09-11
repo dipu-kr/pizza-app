@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { cartTotalQuantity } = useSelector((state) => state.cart);
-  console.log(cartTotalQuantity);
+
   const navigate = useNavigate();
 
   const [menu, setMenu] = useState(false);

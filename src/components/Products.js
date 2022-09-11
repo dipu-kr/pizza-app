@@ -9,10 +9,12 @@ import { addToCart, getTotals } from "../redux/cartSlice";
 const Products = () => {
   const dispatch = useDispatch();
   const [searchItem, setSearchItem] = useState("");
+
   const handleAddToCart = (item) => {
     dispatch(addToCart(item));
     dispatch(getTotals());
   };
+
   return (
     <div className="products-main">
       <div className="products-bg-img-div">
@@ -35,15 +37,7 @@ const Products = () => {
         <div className="products-div">
           {/* ------------- */}
           {data
-            .filter((val) => {
-              if (searchItem === "") {
-                return val;
-              } else if (
-                val.title.toLowerCase().includes(searchItem.toLowerCase())
-              ) {
-                return val;
-              }
-            })
+            .filter((item) => item.title.toLowerCase().includes(searchItem))
             .map((item) => (
               <div className="product-div" key={item.id}>
                 <div className="product-img-div">

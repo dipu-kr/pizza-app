@@ -1,23 +1,17 @@
 // all images imported from images directory
 import product_01_image_01 from "./images/product_01.jpeg";
-import product_01_image_02 from "./images/product_01.1.jpeg";
-import product_01_image_03 from "./images/product_01.3.jpeg";
 
 import product_02_image_01 from "./images/product_2.1.jpeg";
 import product_02_image_02 from "./images/product_2.2.jpeg";
-import product_02_image_03 from "./images/product_2.3.jpeg";
 
 import product_03_image_01 from "./images/product_3.1.jpeg";
 import product_03_image_02 from "./images/product_3.2.jpeg";
-import product_03_image_03 from "./images/product_3.3.jpeg";
 
 import product_04_image_01 from "./images/product_4.1.jpeg";
 import product_04_image_02 from "./images/product_4.2.jpeg";
-import product_04_image_03 from "./images/product_4.3.png";
 
 import product_05_image_01 from "./images/product_04.jpeg";
 import product_05_image_02 from "./images/product_08.jpeg";
-import product_05_image_03 from "./images/product_09.jpeg";
 
 import product_06_image_01 from "./images/bread(1).png";
 import product_06_image_02 from "./images/bread(2).png";
