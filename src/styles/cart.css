@@ -196,6 +196,9 @@
         width: 200px;
         margin-bottom: 15px;
     }
+    .trolley-img-div button{
+        margin-top: 50px;
+    }
 }
 
 /* ------------ media query for screen size of 601px to 768px---------------*/
