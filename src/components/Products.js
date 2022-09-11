@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/products.css";
 import banner from "../assets/images/banner.jpeg";
 import { BsSearch } from "react-icons/bs";
@@ -8,7 +8,7 @@ import { addToCart, getTotals } from "../redux/cartSlice";
 
 const Products = () => {
   const dispatch = useDispatch();
-
+  const [searchItem, setSearchItem] = useState("");
   const handleAddToCart = (item) => {
     dispatch(addToCart(item));
     dispatch(getTotals());
@@ -21,30 +21,46 @@ const Products = () => {
       </div>
       <div className="products-container">
         <div className="search-div">
-          <input type="text" placeholder="Search..." />
+          <input
+            type="text"
+            placeholder="Search..."
+            onChange={(event) => {
+              setSearchItem(event.target.value);
+            }}
+          />
           <button>
             <BsSearch />
           </button>
         </div>
         <div className="products-div">
           {/* ------------- */}
-          {data.map((item) => (
-            <div className="product-div" key={item.id}>
-              <div className="product-img-div">
-                <img src={item.image01} alt="item-img" />
+          {data
+            .filter((val) => {
+              if (searchItem === "") {
+                return val;
+              } else if (
+                val.title.toLowerCase().includes(searchItem.toLowerCase())
+              ) {
+                return val;
+              }
+            })
+            .map((item) => (
+              <div className="product-div" key={item.id}>
+                <div className="product-img-div">
+                  <img src={item.image01} alt="item-img" />
+                </div>
+                <p className="product-name">{item.title}</p>
+                <div className="price-btn-div">
+                  <span className="item-price">${item.price}</span>
+                  <button
+                    className="add-btn"
+                    onClick={() => handleAddToCart(item)}
+                  >
+                    Add to Cart
+                  </button>
+                </div>
               </div>
-              <p className="product-name">{item.title}</p>
-              <div className="price-btn-div">
-                <span className="item-price">${item.price}</span>
-                <button
-                  className="add-btn"
-                  onClick={() => handleAddToCart(item)}
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-          ))}
+            ))}
         </div>
       </div>
     </div>
